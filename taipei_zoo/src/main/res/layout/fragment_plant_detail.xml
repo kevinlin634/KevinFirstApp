@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/fragmentPlantDetail_picImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:minHeight="@dimen/dimen_300dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_2dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/fragmentPlantDetail_fNameChTextView"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="fragmentPlantDetail_fNameChTextView" />
+
+        <TextView
+            android:id="@+id/fragmentPlantDetail_fNameEnTextView"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="fragmentPlantDetail_fNameEnTextView" />
+
+        <TextView
+            android:id="@+id/fragmentPlantDetail_fAlsoKnownTextView"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="fragmentPlantDetail_fAlsoKnownTextView" />
+
+        <TextView
+            android:id="@+id/fragmentPlantDetail_fBriefTextView"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="fragmentPlantDetail_fBriefTextView" />
+
+        <TextView
+            android:id="@+id/fragmentPlantDetail_fFeatureTextView"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="fragmentPlantDetail_fFeatureTextView" />
+
+        <TextView
+            android:id="@+id/fragmentPlantDetail_fFunctionAndApplicationTextView"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="fragmentPlantDetail_fFunctionAndApplicationTextView" />
+
+        <TextView
+            android:id="@+id/fragmentPlantDetail_fUpdateTextView"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="fragmentPlantDetail_fUpdateTextView" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

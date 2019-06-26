@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pavilionRecyclerViewViewHolder_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/listChoiceBackgroundIndicator">
+
+    <ImageView
+        android:id="@+id/pavilionRecyclerViewViewHolder_ImageView"
+        android:layout_width="@dimen/dimen_150dp"
+        android:layout_height="@dimen/dimen_100dp"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@color/gray"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pavilionRecyclerViewViewHolder_titleTextView"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_22sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/pavilionRecyclerViewViewHolder_ImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title text" />
+
+    <TextView
+        android:id="@+id/pavilionRecyclerViewViewHolder_infoTextView"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/pavilionRecyclerViewViewHolder_ImageView"
+        app:layout_constraintTop_toBottomOf="@+id/pavilionRecyclerViewViewHolder_titleTextView"
+        tools:text="desc text desc text desc text desc text desc text desc text desc text desc text xt desc text desc text desc text desc text desc text" />
+
+    <TextView
+        android:id="@+id/pavilionRecyclerViewViewHolder_memoTextView"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/pavilionRecyclerViewViewHolder_ImageView"
+        app:layout_constraintTop_toBottomOf="@+id/pavilionRecyclerViewViewHolder_infoTextView"
+        tools:text="info" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:src="@mipmap/btn_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/pavilionRecyclerViewViewHolder_infoTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

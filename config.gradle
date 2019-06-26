@@ -1,0 +1,19 @@
+ext {
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "26.0.2",
+            applicationId    : "com.kevin.app",
+            minSdkVersion    : 16,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+
+    dependencies = [
+
+            "eventbus"                   : "org.greenrobot:eventbus:3.0.0",
+            "gson"                       : "com.google.code.gson:gson:2.6.2",
+            "retrofit"                   : "com.squareup.retrofit2:retrofit:2.2.0",
+            "glide"                      : "com.github.bumptech.glide:glide:4.6.1",
+    ]
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kevin App</string>
+    <string name="no_take_a_rest_info">無休館資訊</string>
+    <string name="request_fail">獲取資料失敗</string>
+    <string name="retry">重試</string>
+    <string name="pavilion_intro">台北市立動物園</string>
+    <string name="open_browser">在網頁開啟</string>
+</resources>
