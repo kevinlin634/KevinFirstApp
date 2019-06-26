@@ -54,9 +54,6 @@ public class PavilionDetailPresenter implements PavilionDetailContract.Presenter
 
     @Override
     public void requestDate() {
-        if (mView == null) {
-            return;
-        }
         mView.showEmpty(false, "", null);
         mView.showLoading(true);
 
@@ -68,6 +65,9 @@ public class PavilionDetailPresenter implements PavilionDetailContract.Presenter
                 , new NetWorkCallBack<PlantResponseEntity>() {
                     @Override
                     public void onSuccess(PlantResponseEntity result) {
+                        if (mView == null) {
+                            return;
+                        }
                         mView.showLoading(false);
                         mView.showEmpty(false, "", null);
                         mView.showRecyclerView(result.getResultEntity().getResults());
@@ -76,6 +76,9 @@ public class PavilionDetailPresenter implements PavilionDetailContract.Presenter
 
                     @Override
                     public void onFail(String message) {
+                        if (mView == null) {
+                            return;
+                        }
                         mView.showLoading(false);
                     }
                 }, this);

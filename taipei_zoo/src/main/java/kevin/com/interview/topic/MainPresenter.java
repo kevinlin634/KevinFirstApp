@@ -54,7 +54,6 @@ public class MainPresenter implements MainContract.Presenter {
     public void requestDate() {
         if (mView == null) {
             return;
-
         }
         mView.showEmpty(false, "", null);
         mView.showLoading(true);
@@ -62,8 +61,10 @@ public class MainPresenter implements MainContract.Presenter {
                 , new NetWorkCallBack<PavilionResponseEntity>() {
                     @Override
                     public void onSuccess(PavilionResponseEntity result) {
+                        if (mView == null) {
+                            return;
+                        }
                         mView.showLoading(false);
-
                         if (result == null) {
                             mView.showEmpty(true, "", mRetryClickListener);
                             return;
@@ -83,6 +84,9 @@ public class MainPresenter implements MainContract.Presenter {
                     @Override
                     public void onFail(String message) {
                         Log.e("TAG", "onFail");
+                        if (mView == null) {
+                            return;
+                        }
                         mView.showLoading(false);
                         mView.showEmpty(true, message, mRetryClickListener);
                     }
